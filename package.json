@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "axios": "^0.18.0",
+    "cross-env": "^5.1.6",
     "dotenv": "^5.0.1",
     "jquery": "^3.3.1",
     "rc-pagination": "^1.16.0",
@@ -23,6 +24,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "staging": "cross-env REACT_APP_ENV=staging react-scripts start",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }
